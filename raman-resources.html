@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raman Resources - BRIGHT Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo-section">
+                    <img src="images/brightlablogo.jpeg" alt="BRIGHT Lab">
+                    <img src="images/iitroorkee.jpeg" alt="IIT R">
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="raman-resources.html" class="active">Raman Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero rr-hero">
+        <div class="container">
+            <div class="rr-hero-badge">🔬 Open Access Tools</div>
+            <h1 class="hero-title">Raman Resources</h1>
+            <p class="hero-subtitle">"Researcher's life made easy — powerful spectral analysis tools, free for the world."</p>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="about-section" style="padding: 3rem 0 1rem;">
+        <div class="container">
+            <div class="about-content">
+                <p>BRIGHT Lab is committed to making cutting-edge spectral analysis accessible to researchers everywhere. Our free web tools let you upload your Raman data and apply advanced statistical and machine learning methods — no coding required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 
+         FEATURED TOOL: PCA
+    ========================= -->
+    <section class="rr-featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Tool</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="rr-featured-card">
+                <div class="rr-featured-visual">
+                    <div class="rr-icon-large">📊</div>
+                    <div class="rr-scatter-demo">
+                        <!-- Decorative animated scatter plot SVG -->
+                        <svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" class="rr-svg-demo">
+                            <!-- Axes -->
+                            <line x1="30" y1="190" x2="300" y2="190" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                            <line x1="30" y1="190" x2="30" y2="20" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                            <text x="160" y="210" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle">PC1</text>
+                            <text x="12" y="110" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle" transform="rotate(-90,12,110)">PC2</text>
+                            <!-- Cluster 1 - blue dots -->
+                            <circle cx="80"  cy="80"  r="6" fill="#60a5fa" opacity="0.85" class="rr-dot"/>
+                            <circle cx="95"  cy="68"  r="5" fill="#60a5fa" opacity="0.75" class="rr-dot"/>
+                            <circle cx="70"  cy="95"  r="7" fill="#60a5fa" opacity="0.9"  class="rr-dot"/>
+                            <circle cx="110" cy="75"  r="5" fill="#60a5fa" opacity="0.7"  class="rr-dot"/>
+                            <circle cx="88"  cy="105" r="6" fill="#60a5fa" opacity="0.8"  class="rr-dot"/>
+                            <circle cx="60"  cy="70"  r="4" fill="#60a5fa" opacity="0.65" class="rr-dot"/>
+                            <circle cx="105" cy="90"  r="5" fill="#60a5fa" opacity="0.8"  class="rr-dot"/>
+                            <!-- Cluster 2 - teal dots -->
+                            <circle cx="210" cy="130" r="6" fill="#2dd4bf" opacity="0.85" class="rr-dot"/>
+                            <circle cx="225" cy="115" r="5" fill="#2dd4bf" opacity="0.75" class="rr-dot"/>
+                            <circle cx="200" cy="145" r="7" fill="#2dd4bf" opacity="0.9"  class="rr-dot"/>
+                            <circle cx="240" cy="130" r="5" fill="#2dd4bf" opacity="0.7"  class="rr-dot"/>
+                            <circle cx="215" cy="155" r="6" fill="#2dd4bf" opacity="0.8"  class="rr-dot"/>
+                            <circle cx="190" cy="120" r="4" fill="#2dd4bf" opacity="0.65" class="rr-dot"/>
+                            <circle cx="235" cy="145" r="5" fill="#2dd4bf" opacity="0.8"  class="rr-dot"/>
+                            <!-- Cluster 3 - orange dots -->
+                            <circle cx="160" cy="50"  r="6" fill="#fb923c" opacity="0.85" class="rr-dot"/>
+                            <circle cx="175" cy="38"  r="5" fill="#fb923c" opacity="0.75" class="rr-dot"/>
+                            <circle cx="148" cy="62"  r="7" fill="#fb923c" opacity="0.9"  class="rr-dot"/>
+                            <circle cx="185" cy="55"  r="5" fill="#fb923c" opacity="0.7"  class="rr-dot"/>
+                            <circle cx="165" cy="72"  r="4" fill="#fb923c" opacity="0.8"  class="rr-dot"/>
+                            <!-- Ellipses around clusters -->
+                            <ellipse cx="88" cy="87" rx="38" ry="30" fill="rgba(96,165,250,0.12)" stroke="rgba(96,165,250,0.4)" stroke-width="1.5" stroke-dasharray="4 3"/>
+                            <ellipse cx="216" cy="135" rx="38" ry="28" fill="rgba(45,212,191,0.12)" stroke="rgba(45,212,191,0.4)" stroke-width="1.5" stroke-dasharray="4 3"/>
+                            <ellipse cx="167" cy="55" rx="30" ry="22" fill="rgba(251,146,60,0.12)" stroke="rgba(251,146,60,0.4)" stroke-width="1.5" stroke-dasharray="4 3"/>
+                            <!-- Legend -->
+                            <circle cx="48" cy="168" r="5" fill="#60a5fa"/>
+                            <text x="58" y="172" fill="rgba(255,255,255,0.7)" font-size="10">Class A</text>
+                            <circle cx="110" cy="168" r="5" fill="#2dd4bf"/>
+                            <text x="120" y="172" fill="rgba(255,255,255,0.7)" font-size="10">Class B</text>
+                            <circle cx="172" cy="168" r="5" fill="#fb923c"/>
+                            <text x="182" y="172" fill="rgba(255,255,255,0.7)" font-size="10">Class C</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="rr-featured-info">
+                    <div class="rr-tool-tag">Dimensionality Reduction</div>
+                    <h2 class="rr-featured-title">PCA • LDA • QDA — Analytical Chemometrics GUI</h2>
+                    <p class="rr-featured-subtitle">Principal Component Analysis, Linear Discriminant Analysis, Quadratic Discriminant Analysis</p>
+                    <p class="rr-featured-desc">Upload your raw Raman spectral data and instantly visualize sample groupings through interactive plots. Identify hidden patterns, reduce dimensionality, and explore variance across your dataset — all in your browser, no installation needed.</p>
+
+                    <div class="rr-feature-tags">
+                        <span>📁 CSV / Excel upload</span>
+                        <span>📈 Interactive scores plot</span>
+                        <span>📉 Loadings plot</span>
+                        <span>🎯 Variance explained</span>
+                        <span>💾 Export results</span>
+                    </div>
+
+                    <div class="rr-featured-actions">
+                        <a href="https://supervised-unsupervised-ml-gui-cwdprappn37uensjgxriruq.streamlit.app/" class="rr-launch-btn rr-launch-primary" onclick="window.open(this.href, '_blank'); return false;">
+                            🚀 Click to Launch
+                        </a>
+                        <!-- <span class="rr-coming-soon-note">⏳ Link coming soon</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================
+         MORE TOOLS GRID
+    ========================= -->
+    <section class="rr-tools-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>More Tools</h2>
+                <div class="underline"></div>
+                <p style="margin-top:1rem; color:var(--text-light);">More tools are actively being developed. Check back soon!</p>
+            </div>
+
+            <div class="rr-tools-grid">
+
+                <!-- LDA Tool -->
+                <!-- <div class="rr-tool-card">
+                    <div class="rr-tool-icon">🎯</div>
+                    <div class="rr-tool-tag">Classification</div>
+                    <h3>LDA for Raman Spectra</h3>
+                    <p class="rr-tool-subtitle">Linear Discriminant Analysis</p>
+                    <p>Classify your Raman spectra using LDA — a supervised method that finds the axes maximizing class separation. Ideal for distinguishing tissue types, bacterial species, or chemical compositions.</p>
+                    <ul class="rr-tool-features">
+                        <li>📁 CSV / Excel upload</li>
+                        <li>🏷️ Class label support</li>
+                        <li>📊 LD scores plot</li>
+                        <li>📋 Classification report</li>
+                        <li>💾 Export predictions</li>
+                    </ul>
+                    <div class="rr-tool-actions">
+                        <a href="#" class="rr-launch-btn rr-launch-secondary" onclick="alert('Link coming soon! This tool is under development.'); return false;">
+                            🚀 Launch LDA Tool
+                        </a>
+                        <span class="rr-coming-soon-badge">Coming Soon</span>
+                    </div>
+                </div> -->
+
+                <!-- Placeholder for future tool 1 -->
+                <div class="rr-tool-card rr-tool-card--future">
+                    <div class="rr-tool-icon">⚗️</div>
+                    <div class="rr-tool-tag rr-tag-future">Upcoming</div>
+                    <h3>Spectral Preprocessing</h3>
+                    <p class="rr-tool-subtitle">Normalization & Baseline Correction</p>
+                    <p>Clean your Raman spectra before analysis — apply fluorescence baseline correction, vector normalization, smoothing (Savitzky-Golay), and cosmic ray removal.</p>
+                    <ul class="rr-tool-features">
+                        <li>📉 Baseline correction</li>
+                        <li>🔧 Smoothing filters</li>
+                        <li>⚖️ Normalization methods</li>
+                        <li>💾 Export clean spectra</li>
+                    </ul>
+                    <div class="rr-tool-actions">
+                        <span class="rr-coming-soon-badge rr-badge-large">🔧 Under Development</span>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future tool 2 -->
+                <div class="rr-tool-card rr-tool-card--future">
+                    <div class="rr-tool-icon">🤖</div>
+                    <div class="rr-tool-tag rr-tag-future">Upcoming</div>
+                    <h3>ML Classifier</h3>
+                    <p class="rr-tool-subtitle">SVM, Random Forest & More</p>
+                    <p>Train and test machine learning classifiers on your spectral data. Compare SVM, Random Forest, and k-NN with cross-validation and performance metrics — all in one click.</p>
+                    <ul class="rr-tool-features">
+                        <li>🧠 Multiple algorithms</li>
+                        <li>🔄 Cross-validation</li>
+                        <li>📊 Confusion matrix</li>
+                        <li>💾 Export model</li>
+                    </ul>
+                    <div class="rr-tool-actions">
+                        <span class="rr-coming-soon-badge rr-badge-large">🔧 Under Development</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="rr-howitworks-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="rr-steps-grid">
+                <div class="rr-step">
+                    <div class="rr-step-number">01</div>
+                    <div class="rr-step-icon">📂</div>
+                    <h3>Upload Your Data</h3>
+                    <p>Upload your Raman spectral data as a CSV or Excel file. Rows are samples, columns are wavenumber intensities.</p>
+                </div>
+                <div class="rr-step-arrow">→</div>
+                <div class="rr-step">
+                    <div class="rr-step-number">02</div>
+                    <div class="rr-step-icon">⚙️</div>
+                    <h3>Configure & Run</h3>
+                    <p>Set your parameters — number of components, class labels, preprocessing options — and click Run.</p>
+                </div>
+                <div class="rr-step-arrow">→</div>
+                <div class="rr-step">
+                    <div class="rr-step-number">03</div>
+                    <div class="rr-step-icon">📈</div>
+                    <h3>Explore Results</h3>
+                    <p>Interact with scores plots, loadings, and statistics. Download publication-ready figures and result tables.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="rr-cta-section">
+        <div class="container">
+            <div class="rr-cta-box">
+                <h3>Have a suggestion for a new tool?</h3>
+                <p>We're actively building more Raman analysis tools based on researcher needs. Drop us a message!</p>
+                <a href="contact.html" class="btn-primary">💬 Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BRIGHT Lab</h4>
+                    <p>Biophotonics Research In Intelligent Global Health Technologies</p>
+                    <p>IIT Roorkee, Uttarakhand, India</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="raman-resources.html">Raman Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: rishikesh.pandey@bt.iitr.ac.in</p>
+                    <p>Phone: +91-1332-285607</p>
+                    <p>F-13, Old BioTech Building, Department of Biosciences & Bioengineering,
+                        Indian Institute of Technology Roorkee,
+                        Roorkee, Uttarakhand - 247667, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BRIGHT Lab, IIT Roorkee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

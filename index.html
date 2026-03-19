@@ -13,15 +13,19 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo-section">
-                    <div class="logo-placeholder">BRIGHT LAB</div>
-                    <div class="iit-logo-placeholder">IIT ROORKEE</div>
+                    <!-- <div class="logo-placeholder">BRIGHT LAB</div> -->
+                    <img src="images/brightlablogo.jpeg" alt="BRIGHT Lab" height="70">
+                    <!-- <div class="iit-logo-placeholder">IIT ROORKEE</div> -->
+                    <img src="images/iitroorkee.jpeg" alt="IIT R" height="70">
+                    <!-- <div class="iit-logo-placeholder">IIT ROORKEE</div> -->
                 </div>
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="news.html">News</a></li>
                     <li><a href="facilities.html">Facilities</a></li>
                     <li><a href="team.html">Team</a></li>
                     <li><a href="publications.html">Publications</a></li>
+                     <li><a href="raman-resources.html">Raman Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="hamburger" id="hamburger">
@@ -35,23 +39,212 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <h1 class="hero-title">Welcome To BRIGHT Lab !</h1>
-            <p class="hero-subtitle">"Science is our religion, and we love to explore and innovate new things."</p>
-        </div>
-    </section>
+        <!-- Animated Photon Ejection Background -->
+        <svg class="photon-bg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="rayGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.3" />
+                </linearGradient>
+                <linearGradient id="surfaceGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.8" />
+                    <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:0.9" />
+                    <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0.8" />
+                </linearGradient>
+                <filter id="photonGlow">
+                    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                    <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            
+            <!-- Background stars/field -->
+            <g opacity="0.15">
+                <circle cx="500" cy="80" r="1.5" fill="#ffffff"/>
+                <circle cx="600" cy="120" r="1" fill="#ffffff"/>
+                <circle cx="550" cy="60" r="1.5" fill="#ffffff"/>
+            </g>
+            
+            <!-- Incoming light rays at 60 degree angle -->
+            <g class="light-rays">
+                <line class="ray ray-1" x1="300" y1="-50" x2="600" y2="470" stroke="url(#rayGradient)" stroke-width="6" stroke-linecap="round" opacity="0.9" filter="url(#photonGlow)"/>
+                <line class="ray ray-2" x1="280" y1="-50" x2="580" y2="470" stroke="url(#rayGradient)" stroke-width="6" stroke-linecap="round" opacity="0.85" filter="url(#photonGlow)" style="animation-delay: 0.15s"/>
+                <line class="ray ray-3" x1="320" y1="-50" x2="620" y2="470" stroke="url(#rayGradient)" stroke-width="6" stroke-linecap="round" opacity="0.9" filter="url(#photonGlow)" style="animation-delay: 0.3s"/>
+                <line class="ray ray-4" x1="260" y1="-50" x2="560" y2="470" stroke="url(#rayGradient)" stroke-width="5" stroke-linecap="round" opacity="0.8" filter="url(#photonGlow)" style="animation-delay: 0.45s"/>
+                <line class="ray ray-5" x1="340" y1="-50" x2="640" y2="470" stroke="url(#rayGradient)" stroke-width="5" stroke-linecap="round" opacity="0.8" filter="url(#photonGlow)" style="animation-delay: 0.6s"/>
+            </g>
+            
+            <!-- Reflected light rays bouncing back at 60 degree angle (mirror image to the RIGHT) -->
+            <g class="reflected-rays">
+                <line class="reflected-ray reflected-ray-1" x1="600" y1="400" x2="900" y2="-50" stroke="url(#rayGradient)" stroke-width="6" stroke-linecap="round" opacity="0.9" filter="url(#photonGlow)" stroke-dasharray="620" stroke-dashoffset="620"/>
+                <line class="reflected-ray reflected-ray-2" x1="580" y1="400" x2="880" y2="-50" stroke="url(#rayGradient)" stroke-width="6" stroke-linecap="round" opacity="0.85" filter="url(#photonGlow)" stroke-dasharray="620" stroke-dashoffset="620" style="animation-delay: 0.15s"/>
+                <line class="reflected-ray reflected-ray-3" x1="620" y1="400" x2="920" y2="-50" stroke="url(#rayGradient)" stroke-width="6" stroke-linecap="round" opacity="0.9" filter="url(#photonGlow)" stroke-dasharray="620" stroke-dashoffset="620" style="animation-delay: 0.3s"/>
+                <line class="reflected-ray reflected-ray-4" x1="560" y1="400" x2="860" y2="-50" stroke="url(#rayGradient)" stroke-width="5" stroke-linecap="round" opacity="0.8" filter="url(#photonGlow)" stroke-dasharray="620" stroke-dashoffset="620" style="animation-delay: 0.45s"/>
+                <line class="reflected-ray reflected-ray-5" x1="640" y1="400" x2="940" y2="-50" stroke="url(#rayGradient)" stroke-width="5" stroke-linecap="round" opacity="0.8" filter="url(#photonGlow)" stroke-dasharray="620" stroke-dashoffset="620" style="animation-delay: 0.6s"/>
+            </g>
+            
+            <!-- Material/Surface layer - UNIFORM CURVED -->
+            <defs>
+                <path id="curvedSurface" d="M 350 430 Q 600 390, 850 430 L 850 490 Q 600 450, 350 490 Z" fill="url(#surfaceGradient)" opacity="0.95"/>
+            </defs>
+            <use xlink:href="#curvedSurface"/>
+            
+            <!-- Surface texture lines - curved -->
+            <g opacity="0.25">
+                <path d="M 350 420 Q 600 385, 850 420" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+                <path d="M 350 435 Q 600 400, 850 435" stroke="#ffffff" stroke-width="0.8" fill="none"/>
+                <path d="M 350 450 Q 600 415, 850 450" stroke="#ffffff" stroke-width="1" fill="none"/>
+                <path d="M 350 465 Q 600 430, 850 465" stroke="#ffffff" stroke-width="0.8" fill="none"/>
+            </g>
+            
 
-    <!-- Featured Research Image -->
-    <section class="featured-section">
-        <div class="container">
-            <div class="featured-image-placeholder">
-                <p>Featured Research Image</p>
-                <small>Replace with actual lab/research image</small>
+            <!-- Ejected photons/particles - larger and more visible -->
+            <g class="photon-group">
+                <!-- Photon ejection set 1 (center point) - Upward & opposite directions -->
+                <circle class="photon photon-1a" cx="450" cy="400" r="8" fill="#fbbf24" filter="url(#photonGlow)"/>
+                <circle class="photon photon-1b" cx="450" cy="400" r="5" fill="#fcd34d" opacity="0.8"/>
+                <circle class="photon photon-2a" cx="450" cy="400" r="8" fill="#fbbf24" filter="url(#photonGlow)" style="animation-delay: 0.25s"/>
+                <circle class="photon photon-2b" cx="450" cy="400" r="5" fill="#fcd34d" opacity="0.8" style="animation-delay: 0.25s"/>
+                <circle class="photon photon-3a" cx="450" cy="400" r="8" fill="#f59e0b" filter="url(#photonGlow)" style="animation-delay: 0.15s"/>
+                <circle class="photon photon-3b" cx="450" cy="400" r="5" fill="#fbbf24" opacity="0.75" style="animation-delay: 0.15s"/>
+                <!-- Opposite direction photons from point 1 -->
+                <circle class="photon photon-1c" cx="450" cy="400" r="8" fill="#fbbf24" filter="url(#photonGlow)" style="animation-delay: 0.05s"/>
+                <circle class="photon photon-1d" cx="450" cy="400" r="5" fill="#fcd34d" opacity="0.8" style="animation-delay: 0.05s"/>
+                <circle class="photon photon-2c" cx="450" cy="400" r="8" fill="#f59e0b" filter="url(#photonGlow)" style="animation-delay: 0.3s"/>
+                <circle class="photon photon-2d" cx="450" cy="400" r="5" fill="#fbbf24" opacity="0.75" style="animation-delay: 0.3s"/>
+                
+                <!-- Photon ejection set 2 -->
+                <circle class="photon photon-4a" cx="550" cy="400" r="8" fill="#fbbf24" filter="url(#photonGlow)" style="animation-delay: 0.4s"/>
+                <circle class="photon photon-4b" cx="550" cy="400" r="5" fill="#fcd34d" opacity="0.8" style="animation-delay: 0.4s"/>
+                <circle class="photon photon-5a" cx="550" cy="400" r="8" fill="#fbbf24" filter="url(#photonGlow)" style="animation-delay: 0.6s"/>
+                <circle class="photon photon-5b" cx="550" cy="400" r="5" fill="#fcd34d" opacity="0.8" style="animation-delay: 0.6s"/>
+                <circle class="photon photon-6a" cx="550" cy="400" r="8" fill="#f59e0b" filter="url(#photonGlow)" style="animation-delay: 0.5s"/>
+                <circle class="photon photon-6b" cx="550" cy="400" r="5" fill="#fbbf24" opacity="0.75" style="animation-delay: 0.5s"/>
+                <!-- Opposite direction photons from point 2 -->
+                <circle class="photon photon-4c" cx="550" cy="400" r="8" fill="#fbbf24" filter="url(#photonGlow)" style="animation-delay: 0.2s"/>
+                <circle class="photon photon-4d" cx="550" cy="400" r="5" fill="#fcd34d" opacity="0.8" style="animation-delay: 0.2s"/>
+                <circle class="photon photon-5c" cx="550" cy="400" r="8" fill="#f59e0b" filter="url(#photonGlow)" style="animation-delay: 0.55s"/>
+                <circle class="photon photon-5d" cx="550" cy="400" r="5" fill="#fbbf24" opacity="0.75" style="animation-delay: 0.55s"/>
+                
+                <!-- Photon ejection set 3 -->
+                <circle class="photon photon-7a" cx="650" cy="400" r="8" fill="#fbbf24" filter="url(#photonGlow)" style="animation-delay: 0.2s"/>
+                <circle class="photon photon-7b" cx="650" cy="400" r="5" fill="#fcd34d" opacity="0.8" style="animation-delay: 0.2s"/>
+                <circle class="photon photon-8a" cx="650" cy="400" r="8" fill="#fbbf24" filter="url(#photonGlow)" style="animation-delay: 0.45s"/>
+                <circle class="photon photon-8b" cx="650" cy="400" r="5" fill="#fcd34d" opacity="0.8" style="animation-delay: 0.45s"/>
+                <circle class="photon photon-9a" cx="650" cy="400" r="8" fill="#f59e0b" filter="url(#photonGlow)" style="animation-delay: 0.35s"/>
+                <circle class="photon photon-9b" cx="650" cy="400" r="5" fill="#fbbf24" opacity="0.75" style="animation-delay: 0.35s"/>
+                <!-- Opposite direction photons from point 3 -->
+                <circle class="photon photon-7c" cx="650" cy="400" r="8" fill="#fbbf24" filter="url(#photonGlow)" style="animation-delay: 0.1s"/>
+                <circle class="photon photon-7d" cx="650" cy="400" r="5" fill="#fcd34d" opacity="0.8" style="animation-delay: 0.1s"/>
+                <circle class="photon photon-8c" cx="650" cy="400" r="8" fill="#f59e0b" filter="url(#photonGlow)" style="animation-delay: 0.4s"/>
+                <circle class="photon photon-8d" cx="650" cy="400" r="5" fill="#fbbf24" opacity="0.75" style="animation-delay: 0.4s"/>
+            </g>
+            
+
+            <!-- LEFT SIDE: Rotating DNA Strands -->
+            <g class="dna-strand" transform="translate(120, 370)">
+                <!-- DNA helix structure -->
+                <g class="dna-helix">
+                    <!-- Left strand -->
+                    <path d="M 0 -40 Q -20 -30, -25 0 Q -20 30, 0 40" stroke="#2dd4bf" stroke-width="3" fill="none" opacity="0.8"/>
+                    <!-- Right strand -->
+                    <path d="M 0 -40 Q 20 -30, 25 0 Q 20 30, 0 40" stroke="#60a5fa" stroke-width="3" fill="none" opacity="0.8"/>
+                    <!-- Base pairs horizontal connectors -->
+                    <line x1="-15" y1="-30" x2="15" y2="-30" stroke="#fbbf24" stroke-width="2" opacity="0.6"/>
+                    <line x1="-22" y1="0" x2="22" y2="0" stroke="#fbbf24" stroke-width="2" opacity="0.6"/>
+                    <line x1="-15" y1="30" x2="15" y2="30" stroke="#fbbf24" stroke-width="2" opacity="0.6"/>
+                    <!-- Nucleotide circles -->
+                    <circle cx="-15" cy="-30" r="4" fill="#2dd4bf" opacity="0.7"/>
+                    <circle cx="15" cy="-30" r="4" fill="#60a5fa" opacity="0.7"/>
+                    <circle cx="-22" cy="0" r="4" fill="#2dd4bf" opacity="0.7"/>
+                    <circle cx="22" cy="0" r="4" fill="#60a5fa" opacity="0.7"/>
+                    <circle cx="-15" cy="30" r="4" fill="#2dd4bf" opacity="0.7"/>
+                    <circle cx="15" cy="30" r="4" fill="#60a5fa" opacity="0.7"/>
+                </g>
+            </g>
+            
+            <!-- RIGHT SIDE: Blood Cells (RBC & WBC) Animation -->
+            <g class="blood-cells">
+                <!-- RBC 1 (Red Blood Cell) - biconcave disc -->
+                <g class="rbc rbc-1">
+                    <ellipse cx="1020" cy="280" rx="28" ry="20" fill="none" stroke="#ef4444" stroke-width="3" opacity="0.85" filter="url(#photonGlow)"/>
+                    <!-- Biconcave indent - inner depression -->
+                    <ellipse cx="1010" cy="280" rx="8" ry="12" fill="rgba(239, 68, 68, 0.2)" stroke="none"/>
+                    <ellipse cx="1030" cy="280" rx="8" ry="12" fill="rgba(239, 68, 68, 0.2)" stroke="none"/>
+                    <!-- Central depression shadow -->
+                    <path d="M 1005 272 Q 1020 277, 1035 272" stroke="#dc2626" stroke-width="1" fill="none" opacity="0.5"/>
+                </g>
+                
+                <!-- RBC 2 (Red Blood Cell) -->
+                <g class="rbc rbc-2">
+                    <ellipse cx="950" cy="350" rx="28" ry="20" fill="none" stroke="#ef4444" stroke-width="3" opacity="0.8" filter="url(#photonGlow)"/>
+                    <ellipse cx="940" cy="350" rx="8" ry="12" fill="rgba(239, 68, 68, 0.2)" stroke="none"/>
+                    <ellipse cx="960" cy="350" rx="8" ry="12" fill="rgba(239, 68, 68, 0.2)" stroke="none"/>
+                    <path d="M 935 342 Q 950 347, 965 342" stroke="#dc2626" stroke-width="1" fill="none" opacity="0.5"/>
+                </g>
+                
+                <!-- RBC 3 (Red Blood Cell) -->
+                <g class="rbc rbc-3">
+                    <ellipse cx="1080" cy="320" rx="28" ry="20" fill="none" stroke="#ef4444" stroke-width="3" opacity="0.75" filter="url(#photonGlow)"/>
+                    <ellipse cx="1070" cy="320" rx="8" ry="12" fill="rgba(239, 68, 68, 0.2)" stroke="none"/>
+                    <ellipse cx="1090" cy="320" rx="8" ry="12" fill="rgba(239, 68, 68, 0.2)" stroke="none"/>
+                    <path d="M 1065 312 Q 1080 317, 1095 312" stroke="#dc2626" stroke-width="1" fill="none" opacity="0.5"/>
+                </g>
+                
+                <!-- WBC 1 (White Blood Cell) - round with nucleus -->
+                <g class="wbc wbc-1">
+                    <!-- Cell body -->
+                    <circle cx="1000" cy="300" r="25" fill="rgba(96, 165, 250, 0.15)" stroke="#3b82f6" stroke-width="3" opacity="0.85" filter="url(#photonGlow)"/>
+                    <!-- Nucleus -->
+                    <circle cx="1000" cy="300" r="12" fill="none" stroke="#2dd4bf" stroke-width="2.5" opacity="0.8"/>
+                    <!-- Nucleolus -->
+                    <circle cx="1000" cy="300" r="5" fill="#2dd4bf" opacity="0.6"/>
+                    <!-- Granules -->
+                    <circle cx="988" cy="290" r="2" fill="#60a5fa" opacity="0.7"/>
+                    <circle cx="1010" cy="288" r="2" fill="#60a5fa" opacity="0.7"/>
+                    <circle cx="1014" cy="308" r="2" fill="#60a5fa" opacity="0.7"/>
+                    <circle cx="986" cy="310" r="2" fill="#60a5fa" opacity="0.7"/>
+                </g>
+                
+                <!-- WBC 2 (White Blood Cell) -->
+                <g class="wbc wbc-2">
+                    <!-- Cell body -->
+                    <circle cx="1060" cy="360" r="25" fill="rgba(96, 165, 250, 0.15)" stroke="#3b82f6" stroke-width="3" opacity="0.8" filter="url(#photonGlow)"/>
+                    <!-- Nucleus -->
+                    <circle cx="1060" cy="360" r="12" fill="none" stroke="#2dd4bf" stroke-width="2.5" opacity="0.8"/>
+                    <!-- Nucleolus -->
+                    <circle cx="1060" cy="360" r="5" fill="#2dd4bf" opacity="0.6"/>
+                    <!-- Granules -->
+                    <circle cx="1048" cy="350" r="2" fill="#60a5fa" opacity="0.7"/>
+                    <circle cx="1070" cy="348" r="2" fill="#60a5fa" opacity="0.7"/>
+                    <circle cx="1074" cy="368" r="2" fill="#60a5fa" opacity="0.7"/>
+                    <circle cx="1046" cy="370" r="2" fill="#60a5fa" opacity="0.7"/>
+                </g>
+            </g>
+        </svg>
+        
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title"> Welcome To <span class="bright-text">BRIGHT</span> Lab !</h1>
+                <p class="hero-subtitle">"Science is our religion, and we love to explore and innovate new things."</p>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Featured Research Image -->
+    <!-- <section class="featured-section">
+        <div class="container">
+            <div class="featured-image-placeholder">
+                <img src="images/featured.jpeg" alt="Ms.Komal" style="width: 100%; height: 400px; object-fit: contain; border-radius: 12px;">
+                < !-- <p>Featured Research Image</p> -->
+                <!-- <small>Replace with actual lab/research image</small> -->
+            <!-- </div>
+        </div>
+    </section>               
+
+    <   !-- About Section -->
     <section class="about-section">
         <div class="container">
             <div class="section-header">
@@ -108,13 +301,13 @@
                 <img src="images/rishikesh2.jpeg" alt="Prof.Rishikesh Pandey" style="width: 100%; height: 400px; object-fit: cover; border-radius: 12px;">
                 <div class="pi-info">
                     <h3 class="pi-name">Dr. Rishikesh Pandey</h3>
-                    <p class="pi-title">Assistant Professor</p>
+                    <p class="pi-title">Professor (Assistant- Sr Grade)</p>
                     <p class="pi-department">Department of Biosciences & Bioengineering<br>Indian Institute of Technology Roorkee</p>
                     <div class="pi-bio">
                         <p>Dr. Rishikesh Pandey is currently serving as an Assistant Professor (since July 30, 2024) in the Department of Biosciences & Bioengineering at the Indian Institute of Technology Roorkee, where he leads the BRIGHT (Biophotonics Research In Intelligent Global Health Technologies) laboratory.</p>
                         <p>His research centers on the development and clinical translation of advanced biophotonic technologies, with a focus on Raman spectroscopy, label-free imaging, artificial intelligence-driven virtual histology, and cancer diagnostics.</p>
-                        <p>Dr. Pandey obtained his Ph.D. in Raman Spectroscopy from the Indian Institute of Science and subsequently held postdoctoral positions at the University of Pittsburgh and the G. R. Harrison Spectroscopy Lab at MIT. Before joining IIT Roorkee, he served as Chief Scientist at CytoVens Inc. (2019–2024) and as affiliate Assistant Professor at the University of Connecticut School of Medicine and Biomedical Engineering.</p>
-                        <p>With a prolific publication record and over 3,800 citations on Google Scholar (h-index ≈25), Dr. Pandey is internationally recognized for his contributions to translating vibrational spectroscopic techniques toward real-time, label-free diagnosis and intraoperative guidance in oncology.</p>
+                        <p>Dr. Pandey obtained his Ph.D. in Raman Spectroscopy from the Indian Institute of Science and subsequently held postdoctoral positions at the University of Pittsburgh and the G. R. Harrison Spectroscopy Lab at MIT. Before joining IIT Roorkee, he served as Chief Scientist at CytoVeris Inc. (2019–2024) and as affiliate Assistant Professor at the University of Connecticut School of Medicine and Biomedical Engineering.</p>
+                        <p>With a prolific publication record and over 4000+ citations on Google Scholar (h-index ≈27), Dr. Pandey is internationally recognized for his contributions to translating vibrational spectroscopic techniques toward real-time, label-free diagnosis and intraoperative guidance in oncology.</p>
                     </div>
                     <a href="team.html" class="btn-primary">Read More</a>
                 </div>
@@ -129,7 +322,7 @@
                 <h2>Meet Our Team !</h2>
                 <div class="underline"></div>
             </div>
-            <h3 class="team-category">Ph.D Scholars</h3>
+            <h3 class="team-category">Ph.D Scholars | Interns | UG Researchers</h3>
             <p class="team-description">Our dedicated team of doctoral researchers working on cutting-edge biophotonics research.</p>
             <a href="team.html" class="btn-secondary">View Full Team</a>
         </div>
@@ -152,12 +345,20 @@
                         <li><a href="facilities.html">Facilities</a></li>
                         <li><a href="team.html">Team</a></li>
                         <li><a href="publications.html">Publications</a></li>
+                        <li><a href="raman-resources.html">Raman Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <p>Email: rishikesh.pandey@bt.iitr.ac.in</p>
-                    <p>Phone: +91-XXX-XXXXXXX</p>
+                    <p>Phone: +91-1332-285607</p>
+                    <p>F-13, Old BioTech Building, Department of Biosciences & Bioengineering
+                        Indian Institute of Technology Roorkee
+                        Roorkee, Uttarakhand - 247667
+                        India
+                        
+                        </p>
                 </div>
             </div>
             <div class="footer-bottom">

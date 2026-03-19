@@ -13,15 +13,18 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo-section">
-                    <div class="logo-placeholder">BRIGHT LAB</div>
-                    <div class="iit-logo-placeholder">IIT ROORKEE</div>
+                    <!-- <div class="logo-placeholder">BRIGHT LAB</div> -->
+                    <img src="images/brightlablogo.jpeg" alt="BRIGHT Lab Logo" height="85">
+                    <!-- <div class="iit-logo-placeholder">IIT ROORKEE</div> -->
+                    <img src="images/iitroorkee.jpeg" alt="BRIGHT Lab Logo" height="85">
                 </div>
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="news.html">News</a></li>
                     <li><a href="facilities.html">Facilities</a></li>
                     <li><a href="team.html">Team</a></li>
                     <li><a href="publications.html">Publications</a></li>
+                    <li><a href="raman-resources.html">Raman Resources</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
                 <div class="hamburger" id="hamburger">
@@ -68,8 +71,8 @@
 
                     <div class="contact-item">
                         <h4>📞 Phone</h4>
-                        <p>Office: +91-1332-XXXXXX<br>
-                        Department: +91-1332-285750</p>
+                        <p>Office: +91-1332-285607<br>
+                        <!-- Department: +91-1332-285750</p> -->
                     </div>
 
                     <div class="contact-item">
@@ -82,10 +85,10 @@
                     <div class="contact-item">
                         <h4>🔗 Connect With Us</h4>
                         <p>
-                            <a href="#" style="color: var(--primary-color); margin-right: 1rem;">Google Scholar</a><br>
-                            <a href="#" style="color: var(--primary-color); margin-right: 1rem;">ResearchGate</a><br>
-                            <a href="#" style="color: var(--primary-color); margin-right: 1rem;">LinkedIn</a><br>
-                            <a href="#" style="color: var(--primary-color);">Twitter</a>
+                            <a href="https://scholar.google.com/citations?user=wy8rKtwAAAAJ&hl=en" style="color: var(--primary-color); margin-right: 1rem;">Google Scholar</a><br>
+                            <a href="https://www.researchgate.net/profile/Rishikesh-Pandey-4" style="color: var(--primary-color); margin-right: 1rem;">ResearchGate</a><br>
+                            <a href="https://www.linkedin.com/in/rishikesh-pandey-phd-962a4a7b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="color: var(--primary-color); margin-right: 1rem;">LinkedIn</a><br>
+                            <!-- <a href="#" style="color: var(--primary-color);">Twitter</a> -->
                         </p>
                     </div>
                 </div>
@@ -93,28 +96,34 @@
                 <!-- Contact Form -->
                 <div class="contact-form">
                     <h3>Send Us a Message</h3>
-                    <form id="contactForm">
+                
+                    <form action="https://formspree.io/f/xaqpaolj" method="POST">
+                
+                        <!-- spam protection -->
+                        <input type="text" name="_gotcha" style="display:none">
+                
                         <div class="form-group">
                             <label for="name">Name *</label>
                             <input type="text" id="name" name="name" required>
                         </div>
-
+                
                         <div class="form-group">
                             <label for="email">Email *</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-
+                
                         <div class="form-group">
                             <label for="subject">Subject *</label>
                             <input type="text" id="subject" name="subject" required>
                         </div>
-
+                
                         <div class="form-group">
                             <label for="message">Message *</label>
                             <textarea id="message" name="message" required></textarea>
                         </div>
-
+                
                         <button type="submit" class="submit-btn">Send Message</button>
+                
                     </form>
                 </div>
             </div>
@@ -122,23 +131,36 @@
     </section>
 
     <!-- Map Section -->
+    <!-- Map Section -->
     <section class="team-section" style="background-color: var(--light-bg);">
         <div class="container">
             <div class="section-header">
                 <h2>Find Us</h2>
                 <div class="underline"></div>
             </div>
-            
+
             <div style="text-align: center; margin-top: 2rem;">
-                <div style="background-color: var(--border-color); height: 400px; border-radius: 12px; display: flex; justify-content: center; align-items: center; border: 3px dashed var(--text-light);">
-                    <div>
-                        <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 0.5rem;">Google Maps Embed</p>
-                        <p style="color: var(--text-light); font-size: 0.9rem;">Replace with actual Google Maps iframe</p>
-                    </div>
+
+                <!-- Google Map -->
+                <div style="border-radius: 12px; overflow: hidden; max-width: 900px; margin: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.0703690536025!2d77.88899727533753!3d29.86224437501581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eb3708add70cd%3A0x2962c1ad99625236!2sDepartment%20of%20Biosciences%20and%20Bioengineering%2C%20IIT%20Roorkee!5e0!3m2!1sen!2sin!4v1773575373389!5m2!1sen!2sin"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
                 </div>
+
+                <!-- Directions Text -->
                 <p style="margin-top: 1.5rem; color: var(--text-light);">
                     <strong>Directions:</strong> The lab is located in the Department of Biosciences & Bioengineering building on the IIT Roorkee campus.
                 </p>
+
             </div>
         </div>
     </section>
@@ -216,12 +238,20 @@
                         <li><a href="facilities.html">Facilities</a></li>
                         <li><a href="team.html">Team</a></li>
                         <li><a href="publications.html">Publications</a></li>
+                        <li><a href="raman-resources.html">Raman Resources</a></li>
+                        
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <p>Email: rishikesh.pandey@bt.iitr.ac.in</p>
-                    <p>Phone: +91-XXX-XXXXXXX</p>
+                    <p>Phone: +91-1332-285607</p>
+                    <p>F-13, Old BioTech Building, Department of Biosciences & Bioengineering
+                        Indian Institute of Technology Roorkee
+                        Roorkee, Uttarakhand - 247667
+                        India
+                        
+                        </p>
                 </div>
             </div>
             <div class="footer-bottom">

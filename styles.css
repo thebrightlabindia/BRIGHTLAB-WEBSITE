@@ -1,6 +1,8 @@
 /* ==================== 
    Global Styles 
    ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +24,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--white);
@@ -55,7 +57,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.6rem 0;
+    padding: 0.8rem 0;
     position: relative; /* anchor for absolute dropdown */
 }
 
@@ -67,13 +69,13 @@ body {
 
 /* Base logo height — controlled purely by CSS */
 .logo-section img {
-    height: 62px;
+    height: 75px;
 }
 
 .logo-placeholder,
 .iit-logo-placeholder {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--primary-color);
     padding: 10px 15px;
     border: 2px solid var(--primary-color);
@@ -81,15 +83,16 @@ body {
 }
 
 .iit-logo-placeholder {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     background-color: var(--primary-color);
     color: var(--white);
 }
 
 .nav-menu {
     display: flex;
+    flex-wrap: nowrap;
     list-style: none;
-    gap: 2rem;
+    gap: 2.5rem;
     align-items: center;
 }
 
@@ -97,9 +100,11 @@ body {
     text-decoration: none;
     color: var(--text-dark);
     font-weight: 500;
+    font-size: 1.1rem;
     transition: color 0.3s ease;
     padding: 8px 12px;
     border-radius: 4px;
+    white-space: nowrap;
 }
 
 .nav-menu a:hover,
@@ -120,8 +125,8 @@ body {
 }
 
 .hamburger span {
-    width: 25px;
-    height: 3px;
+    width: 30px;
+    height: 4px;
     background-color: var(--primary-color);
     transition: 0.3s ease;
     display: block;
@@ -150,7 +155,7 @@ body {
     text-align: center;
     position: relative;
     overflow: hidden;
-    min-height: 350px;
+    min-height: 280px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,27 +186,27 @@ body {
 
 /* Light ray animations - 60 degree angle - LOOPING */
 .ray {
-    animation: rayFall 2.2s ease-in infinite;
+    /* animation: rayFall 2.2s ease-in infinite; */
 }
 
 .ray-1 {
-    animation-delay: 0s;
+    /* animation-delay: 0s; */
 }
 
 .ray-2 {
-    animation-delay: 0.2s;
+    /* animation-delay: 0.2s; */
 }
 
 .ray-3 {
-    animation-delay: 0.4s;
+    /* animation-delay: 0.4s; */
 }
 
 .ray-4 {
-    animation-delay: 0.6s;
+    /* animation-delay: 0.6s; */
 }
 
 .ray-5 {
-    animation-delay: 0.8s;
+    /* animation-delay: 0.8s; */
 }
 
 @keyframes rayFall {
@@ -227,27 +232,27 @@ body {
 
 /* Reflected ray animations - bounce back after hitting surface */
 .reflected-ray {
-    animation: rayReflect 2.2s ease-out infinite;
+    /* animation: rayReflect 2.2s ease-out infinite; */
 }
 
 .reflected-ray-1 {
-    animation-delay: 0s;
+    /* animation-delay: 0s; */
 }
 
 .reflected-ray-2 {
-    animation-delay: 0.2s;
+    /* animation-delay: 0.2s; */
 }
 
 .reflected-ray-3 {
-    animation-delay: 0.4s;
+    /* animation-delay: 0.4s; */
 }
 
 .reflected-ray-4 {
-    animation-delay: 0.6s;
+    /* animation-delay: 0.6s; */
 }
 
 .reflected-ray-5 {
-    animation-delay: 0.8s;
+    /* animation-delay: 0.8s; */
 }
 
 @keyframes rayReflect {
@@ -275,64 +280,64 @@ body {
 
 /* Photon ejection animations - RANDOM DIRECTIONS */
 .photon-1a, .photon-1b {
-    animation: ejectPhotonUpRight 1.8s ease-out infinite;
+    /* animation: ejectPhotonUpRight 1.8s ease-out infinite; */
 }
 
 .photon-2a, .photon-2b {
-    animation: ejectPhotonUp 1.8s ease-out infinite;
+    /* animation: ejectPhotonUp 1.8s ease-out infinite; */
 }
 
 .photon-3a, .photon-3b {
-    animation: ejectPhotonUpLeft 1.8s ease-out infinite;
+    /* animation: ejectPhotonUpLeft 1.8s ease-out infinite; */
 }
 
 .photon-4a, .photon-4b {
-    animation: ejectPhotonRight 1.8s ease-out infinite;
+    /* animation: ejectPhotonRight 1.8s ease-out infinite; */
 }
 
 .photon-5a, .photon-5b {
-    animation: ejectPhotonDownRight 1.8s ease-out infinite;
+    /* animation: ejectPhotonDownRight 1.8s ease-out infinite; */
 }
 
 .photon-6a, .photon-6b {
-    animation: ejectPhotonDown 1.8s ease-out infinite;
+    /* animation: ejectPhotonDown 1.8s ease-out infinite; */
 }
 
 .photon-7a, .photon-7b {
-    animation: ejectPhotonDownLeft 1.8s ease-out infinite;
+    /* animation: ejectPhotonDownLeft 1.8s ease-out infinite; */
 }
 
 .photon-8a, .photon-8b {
-    animation: ejectPhotonLeft 1.8s ease-out infinite;
+    /* animation: ejectPhotonLeft 1.8s ease-out infinite; */
 }
 
 .photon-9a, .photon-9b {
-    animation: ejectPhotonUpRight 1.8s ease-out infinite;
+    /* animation: ejectPhotonUpRight 1.8s ease-out infinite; */
 }
 
 /* Opposite direction animations - also random */
 .photon-1c, .photon-1d {
-    animation: ejectPhotonDown 1.8s ease-out infinite;
+    /* animation: ejectPhotonDown 1.8s ease-out infinite; */
 }
 
 .photon-2c, .photon-2d {
-    animation: ejectPhotonDownRight 1.8s ease-out infinite;
+    /* animation: ejectPhotonDownRight 1.8s ease-out infinite; */
 }
 
 .photon-4c, .photon-4d {
-    animation: ejectPhotonDownLeft 1.8s ease-out infinite;
+    /* animation: ejectPhotonDownLeft 1.8s ease-out infinite; */
 }
 
 .photon-5c, .photon-5d {
-    animation: ejectPhotonLeft 1.8s ease-out infinite;
+    /* animation: ejectPhotonLeft 1.8s ease-out infinite; */
 }
 
 .photon-7c, .photon-7d {
-    animation: ejectPhotonUpLeft 1.8s ease-out infinite;
+    /* animation: ejectPhotonUpLeft 1.8s ease-out infinite; */
 }
 
 .photon-8c, .photon-8d {
-    animation: ejectPhotonUpRight 1.8s ease-out infinite;
+    /* animation: ejectPhotonUpRight 1.8s ease-out infinite; */
 }
 
 /* Random direction animations - ALL 8 DIRECTIONS */
@@ -425,7 +430,7 @@ body {
 }
 
 .hero-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Merriweather', serif;
     font-size: 3.6rem;
     margin-bottom: 1.2rem;
     font-weight: 700;
@@ -434,7 +439,7 @@ body {
 }
 
 .bright-text {
-    background: linear-gradient(135deg, #ffeb3b 0%, #fdd835 30%, #ffeb3b 60%, #ffeb3b 100%);
+    background: linear-gradient(135deg, #00ccff 0%, #29cef7 0%, #29cef7 0%, #29cef7 0%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -443,22 +448,22 @@ body {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-style: normal;
-    filter: drop-shadow(0 0 12px rgba(255, 235, 59, 0.8));
-    animation: brightGlow 2s ease-in-out infinite;
+    /* filter: drop-shadow(0 0 12px rgba(0, 200, 255, 0.8)); */
+    /* animation: brightGlow 2s ease-in-out infinite; */
 }
 
 @keyframes brightGlow {
     0%, 100% {
-        filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.6));
+        filter: drop-shadow(0 0 8px rgba(2, 145, 255, 0.907));
     }
     50% {
-        filter: drop-shadow(0 0 15px rgba(251, 191, 36, 0.9));
+        filter: drop-shadow(0 0 15px rgba(33, 144, 255, 0.9));
     }
 }
 
 .hero-subtitle {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
     font-style: italic;
     opacity: 0.92;
     max-width: 750px;
@@ -472,7 +477,7 @@ body {
 
 /* Rotating DNA Strand Animation */
 .dna-strand {
-    animation: rotateDNA 6s linear infinite;
+    /* animation: rotateDNA 6s linear infinite; */
 }
 
 @keyframes rotateDNA {
@@ -491,19 +496,19 @@ body {
 
 /* RBC Animation - gentle rotation and movement */
 .rbc {
-    animation: rotateRBC 4s linear infinite, floatRBC 3s ease-in-out infinite;
+    /* animation: rotateRBC 4s linear infinite, floatRBC 3s ease-in-out infinite; */
 }
 
 .rbc-1 {
-    animation-delay: 0s, 0s;
+    /* animation-delay: 0s, 0s; */
 }
 
 .rbc-2 {
-    animation-delay: 0.7s, 0.5s;
+    /* animation-delay: 0.7s, 0.5s; */
 }
 
 .rbc-3 {
-    animation-delay: 1.4s, 1s;
+    /* animation-delay: 1.4s, 1s; */
 }
 
 @keyframes rotateRBC {
@@ -526,15 +531,15 @@ body {
 
 /* WBC Animation - rotation, float and pulsing */
 .wbc {
-    animation: rotateRBC 4s linear infinite, floatRBC 3s ease-in-out infinite, pulseWBC 2.5s ease-in-out infinite;
+    /* animation: rotateRBC 4s linear infinite, floatRBC 3s ease-in-out infinite, pulseWBC 2.5s ease-in-out infinite; */
 }
 
 .wbc-1 {
-    animation-delay: 0s, 0s, 0s;
+    /* animation-delay: 0s, 0s, 0s; */
 }
 
 .wbc-2 {
-    animation-delay: 0.7s, 0.5s, 0.8s;
+    /* animation-delay: 0.7s, 0.5s, 0.8s; */
 }
 
 @keyframes pulseWBC {
@@ -671,6 +676,14 @@ body {
 
 .underline {
     width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.underline2 {
+    width: 50px;
     height: 4px;
     background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
     margin: 0 auto;
@@ -1340,12 +1353,12 @@ body {
     }
 
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     /* Mobile-responsive animations */
     .hero {
-        min-height: 300px;
+        min-height: 240px;
     }
 
     /* Scale down photon animations for mobile */
@@ -1476,17 +1489,17 @@ body {
 
     /* Shrink logos more on very small screens */
     .logo-section img {
-        height: 36px !important;
+        height: 45px !important;
     }
 
     /* Slim down the nav wrapper padding */
     .nav-wrapper {
-        padding: 0.45rem 0;
+        padding: 0.6rem 0;
     }
 
     .logo-placeholder,
     .iit-logo-placeholder {
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding: 8px 12px;
     }
 
@@ -1495,12 +1508,12 @@ body {
     }
 
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     /* Extra small mobile - optimize animations */
     .hero {
-        min-height: 280px;
+        min-height: 220px;
     }
 
     /* Reduce animation distances even more for small phones */
@@ -1599,7 +1612,7 @@ body {
 
 /* Hero badge */
 .rr-hero {
-    padding-bottom: 3.5rem;
+    padding-bottom: 2rem;
 }
 
 .rr-hero-badge {

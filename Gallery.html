@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - BRIGHT Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo-section">
+                    <a href="https://www.thebrightlab.in/index.html" target="_blank">
+                        <img src="images/brightlablogo.jpeg" alt="BRIGHT Lab" height="70">
+                    </a>
+
+                    <a href="https://www.iitr.ac.in/" target="_blank">
+                        <img src="images/iitroorkee.jpeg" alt="IIT R" height="70">
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a> <div class="underline2"></div></li>
+                    <li><a href="news.html">News</a> <div class="underline2"></div></li>
+                    <li><a href="Gallery.html" class="active">Gallery</a> <div class="underline2"></div></li>
+                    <li><a href="facilities.html">Facilities</a> <div class="underline2"></div></li>
+                    <li><a href="team.html">Team</a> <div class="underline2"></div></li>
+                    <li><a href="publications.html">Publications</a> <div class="underline2"></div></li>
+                    <li><a href="raman-resources.html">Raman Resources</a> <div class="underline2"></div></li>
+                    <li><a href="contact.html">Contact</a> <div class="underline2"></div></li>
+                </ul>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Slideshow
+    <section class="hero hero-slideshow">
+        <div class="slideshow-bg">
+            <div class="slide slide-1"></div>
+            <div class="slide slide-2"></div>
+            <div class="slide slide-3"></div>
+            <div class="slide slide-4"></div>
+            <div class="slide slide-5"></div>
+        </div>
+        <div class="slideshow-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title"> Welcome To <span class="bright-text">BRIGHT</span> Lab </h1>
+                <p class="hero-subtitle">"Science is our passion."</p>
+            </div>
+        </div>
+        <div class="slide-indicators">
+            <span class="dot dot-active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+            <span class="dot" onclick="goToSlide(3)"></span>
+            <span class="dot" onclick="goToSlide(4)"></span>
+        </div>
+    </section> -->
+        <!-- Page Header -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">BRIGHT Lab's Gallery</h1>
+            <p class="hero-subtitle">A glimpse into our research space and team life</p>
+        </div>
+    </section>
+
+    
+
+    <!-- Featured Research Image -->
+    <!-- <section class="featured-section">
+        <div class="container">
+            <div class="featured-image-placeholder">
+                <img src="images/featured.jpeg" alt="Ms.Komal" style="width: 100%; height: 400px; object-fit: contain; border-radius: 12px;">
+                < !-- <p>Featured Research Image</p> -->
+                <!-- <small>Replace with actual lab/research image</small> -->
+            <!-- </div>
+        </div>
+    </section>               
+
+    <   !-- About Section -->
+    <!-- <section class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About THE BRIGHT Lab</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <p>"The <span class="bright-text">BRIGHT (Biophotonics Research In Intelligent Global Health Technologies)</span> laboratory advances next-generation diagnostic technologies at the convergence of photonics, biomedical engineering, and artificial intelligence. Our research integrates Raman spectroscopy, label-free imaging, AI-driven virtual histology, and cancer diagnostics to deliver innovative healthcare solutions.</p>
+                <p>We focus on developing fast, non-invasive, and clinically translatable technologies for real-time disease detection and intraoperative guidance, with the overarching goal of improving cancer diagnosis and patient outcomes."
+
+</p>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <!-- <h2>Inside BRIGHT Lab</h2> -->
+                <!-- <div class="underline"></div> -->
+                <!-- <p class="section-subtext">Explore our research and team moments.</p> -->
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/japan1.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">BRIGHTians on the way to Shimane University, JP</div>
+                </div>
+                
+                 <div class="gallery-item">
+                    <img src="images/gal10.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">It's not just another word.</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/gal11.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')"style="object-position: center 10px;">
+                    <div class="gallery-caption">From deadlines to dinner plates</div>
+                </div>
+                  
+                <div class="gallery-item">
+                    <img src="images/gal5.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Cell Culture Setup</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bright1.jpeg" alt="Lab experiment in progress" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">When the model trains for 12 hours and still overfits.</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Shimane.jpg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Diwali @Shimane University, JP</div>
+                </div>
+                 <div class="gallery-item">
+                    <img src="images/gal7.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Our Workspace</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gal20.jpg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Best PI Award !!</div>
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="images/gal1.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Research Lab Overview</div>
+                </div> -->
+                <div class="gallery-item">
+                    <img src="images/japan2.jpeg" alt="Lab experiment in progress" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">HAPPY FACES!</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gal2.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Microscope: exposing cells and our mistakes.</div>
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="images/japan2.jpeg" alt="Lab experiment in progress" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Spectroscopy Setup</div>
+                </div> -->
+                <!-- <div class="gallery-item">
+                    <img src="images/gal12.jpg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Research Lab Overview</div>
+                </div> -->
+                <div class="gallery-item">
+                    <img src="images/gal22.jpg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">BRIGHTIAN's Vibing..</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gal23.jpg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Matsue Castle witnessed peak research energy!</div>
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="images/bright2.jpeg" alt="Team collaboration" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Team Collaboration</div>
+                </div> -->
+                <!-- <div class="gallery-item">
+                    <img src="images/gal3.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Research Lab Overview</div>
+                </div> -->
+                <div class="gallery-item">
+                    <img src="images/gal24.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Citations later, Chai first.</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/japan3.jpeg" alt="Lab equipment" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Serene, Serenity..</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gal13.jpg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Yeh DIWALI, JAPAN Waali</div>
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="images/gal4.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Research Lab Overview</div>
+                </div> -->
+                <div class="gallery-item">
+                    <img src="images/bright3.jpeg" alt="Research presentation" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Praying for our "BRIGHT" future @Mt.Daisen, JP</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gal14.JPG" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">In Hiroshima, JP</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bright4.jpeg" alt="Lab team photo" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Hosting Prof.Hemanth from Shimane University, JP</div>
+                </div>
+                
+
+                <!-- <div class="gallery-item">
+                    <img src="images/japan1.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Research Lab Overview</div>
+                </div> -->
+                <div class="gallery-item">
+                    <img src="images/gal15.jpg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">“PI-san”</div>
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="images/bright1.jpeg" alt="Lab experiment in progress" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Spectroscopy Setup</div>
+                </div> -->
+                <!-- <div class="gallery-item">
+                    <img src="images/japan2.jpeg" alt="Lab experiment in progress" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Spectroscopy Setup</div>
+                </div> -->
+                <div class="gallery-item">
+                    <img src="images/gal6.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">It's Antarctica inside.</div>
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="images/japan2.jpeg" alt="Lab experiment in progress" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Spectroscopy Setup</div>
+                </div> -->
+                <div class="gallery-item">
+                    <img src="images/gal16.jpg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Indian Restaurant hunt finally over in Hiroshima, JP!</div>
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="images/bright2.jpeg" alt="Team collaboration" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Team Collaboration</div>
+                </div> -->
+                <div class="gallery-item">
+                    <img src="images/gal7.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Our Workspace</div>
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="images/japan3.jpeg" alt="Lab equipment" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Optical Instruments</div>
+                </div> -->
+                <!-- <div class="gallery-item">
+                    <img src="images/gal17.HEIC" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Research Lab Overview</div>
+                </div> -->
+                <!-- <div class="gallery-item">
+                    <img src="images/bright3.jpeg" alt="Research presentation" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Research Presentation</div>
+                </div> -->
+                <div class="gallery-item">
+                    <img src="images/gal8.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Diffuse Reflectance Spectroscopy System!</div>
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="images/bright4.jpeg" alt="Lab team photo" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">BRIGHTians at Work</div>
+                </div> -->
+                <div class="gallery-item">
+                    <img src="images/gal17.jpg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Brightian's at just random road in Japan</div>
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="images/japan1.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Research Lab Overview</div>
+                </div> -->
+                <div class="gallery-item">
+                    <img src="images/gal9.jpeg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">We have a great "Cell Culture"</div>
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="images/bright1.jpeg" alt="Lab experiment in progress" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Spectroscopy Setup</div>
+                </div> -->
+                <div class="gallery-item">
+                    <img src="images/gal19.jpg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">JST-SSP Program Concluded</div>
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="images/japan2.jpeg" alt="Lab experiment in progress" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Spectroscopy Setup</div>
+                </div> -->
+               
+                <!-- <div class="gallery-item">
+                    <img src="images/japan2.jpeg" alt="Lab experiment in progress" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Spectroscopy Setup</div>
+                </div> -->
+                <!-- <div class="gallery-item">
+                    <img src="images/bright2.jpeg" alt="Team collaboration" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Team Collaboration</div>
+                </div> -->
+                
+                <!-- <div class="gallery-item">
+                    <img src="images/japan3.jpeg" alt="Lab equipment" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Optical Instruments</div>
+                </div> -->
+                <div class="gallery-item">
+                    <img src="images/gal21.jpg" alt="BRIGHT Lab research space" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">One with Sir C.V.Raman @ShimaneUni, JP</div>
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="images/bright3.jpeg" alt="Research presentation" onerror="this.parentElement.classList.add('gallery-placeholder')">
+                    <div class="gallery-caption">Research Presentation</div>
+                </div> -->
+                
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BRIGHT Lab</h4>
+                    <p>Biophotonics Research In Intelligent Global Health Technologies</p>
+                    <p>IIT Roorkee, Uttarakhand, India</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="raman-resources.html">Raman Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: rishikesh.pandey@bt.iitr.ac.in</p>
+                    <p>Phone: +91-1332-285607</p>
+                    <p>F-13, Old BioTech Building, Department of Biosciences & Bioengineering
+                        Indian Institute of Technology Roorkee
+                        Roorkee, Uttarakhand - 247667
+                        India
+                        
+                        </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BRIGHT Lab, IIT Roorkee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slideshow-bg .slide');
+        const dots = document.querySelectorAll('.slide-indicators .dot');
+        function goToSlide(n) {
+            slides[currentSlide].classList.remove('slide-active');
+            dots[currentSlide].classList.remove('dot-active');
+            currentSlide = n;
+            slides[currentSlide].classList.add('slide-active');
+            dots[currentSlide].classList.add('dot-active');
+        }
+        slides[0].classList.add('slide-active');
+        setInterval(() => goToSlide((currentSlide + 1) % slides.length), 5000);
+    </script>
+</body>
+</html>

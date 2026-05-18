@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRIGHT Lab - IIT Roorkee</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -24,6 +24,7 @@
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="active">Home</a> <div class="underline2"></div></li> 
                     <li><a href="news.html">News</a> <div class="underline2"></div></li>
+                    <li><a href="Gallery.html">Gallery</a> <div class="underline2"></div></li>
                     <li><a href="facilities.html">Facilities</a> <div class="underline2"></div></li>
                     <li><a href="team.html">Team</a> <div class="underline2"></div></li>
                     <li><a href="publications.html">Publications</a> <div class="underline2"></div></li>
@@ -41,34 +42,32 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <!-- Animated Photon Ejection Background -->
-        <svg class="photon-bg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                
-            </defs>
-            
-            <!-- Background stars/field -->
-            <g opacity="0.15">
-                <circle cx="500" cy="80" r="1.5" fill="#ffffff"/>
-                <circle cx="600" cy="120" r="1" fill="#ffffff"/>
-                <circle cx="550" cy="60" r="1.5" fill="#ffffff"/>
-            </g>
-            
-            <!-- LEFT SIDE: Rotating DNA Strands -->
-            
-            <!-- RIGHT SIDE: Blood Cells (RBC & WBC) Animation -->
-            
-        </svg>
-        
+    <!-- Hero Section with Slideshow -->
+    <section class="hero hero-slideshow">
+        <div class="slideshow-bg">
+            <div class="slide slide-1 slide-active"></div>
+            <div class="slide slide-2"></div>
+            <div class="slide slide-3"></div>
+            <div class="slide slide-4"></div>
+            <div class="slide slide-5"></div>
+        </div>
+        <div class="slideshow-overlay"></div>
         <div class="hero-content">
             <div class="container">
                 <h1 class="hero-title"> Welcome To <span class="bright-text">BRIGHT</span> Lab </h1>
                 <p class="hero-subtitle">"Science is our passion."</p>
             </div>
         </div>
+        <div class="slide-indicators">
+            <span class="dot dot-active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+            <span class="dot" onclick="goToSlide(3)"></span>
+            <span class="dot" onclick="goToSlide(4)"></span>
+        </div>
     </section>
+
+    
 
     <!-- Featured Research Image -->
     <!-- <section class="featured-section">
@@ -89,13 +88,16 @@
                 <div class="underline"></div>
             </div>
             <div class="about-content">
-                <p>"The <span class="bright-text">BRIGHT (Biophotonics Research In Intelligent Global Health Technologies)</span> laboratory advances next-generation diagnostic technologies at the convergence of photonics, biomedical engineering, and artificial intelligence. Our research integrates Raman spectroscopy, label-free imaging, AI-driven virtual histology, and cancer diagnostics to deliver innovative healthcare solutions.</p>
+                <p>"The <span class="bright-text">BRIGHT (Biophotonics Research In Intelligent Global Health Technologies)</span> laboratory advances next-generation diagnostic technologies at the convergence of photonics, biomedical engineering, and artificial intelligence. Our research integrates Raman spectroscopy, label-free imaging, AI-driven virtual histology, and cancer diagnostics to deliver innovative solutions.</p>
                 <p>We focus on developing fast, non-invasive, and clinically translatable technologies for real-time disease detection and intraoperative guidance, with the overarching goal of improving cancer diagnosis and patient outcomes."
 
 </p>
             </div>
         </div>
     </section>
+
+
+
 
     <!-- Research Areas -->
     <section class="research-areas">
@@ -123,7 +125,17 @@
                 <div class="research-card">
                     <div class="card-icon"></div>
                     <h3>Cancer Diagnostics</h3>
-                    <p>Real-time diagnostic tools for cancer detection and intraoperative surgical guidance.</p>
+                    <p>Innovative diagnostic approaches for accurate cancer detection, tissue analysis, and real-time intraoperative decision support.</p>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon"></div>
+                    <h3>Multi-Spectral Imaging</h3>
+                    <p>Spectral imaging modalities enabling enhanced tissue visualization and biomarker identification across multiple wavelengths.</p>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon"></div>
+                    <h3>Precision Medicine</h3>
+                    <p>Personalized healthcare approaches tailored to individual patients based on their genetic makeup and disease characteristics.</p>
                 </div>
             </div>
         </div>
@@ -162,6 +174,55 @@
         </div>
     </section>
 
+     <!-- YouTube Channel Section -->
+    <section class="yt-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>BRIGHT Lab on YouTube!</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="yt-card">
+                <div class="yt-left">
+                    <div class="yt-icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF0000" width="64" height="64">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </div>
+                    <!-- <div class="yt-badge"></div> -->
+                </div>
+                <div class="yt-right">
+                    <h3>Tutorials, Talks & Lab Insights</h3>
+                    <p>The BRIGHT Lab YouTube channel is on its way! We'll be sharing in-depth tutorials on Raman spectroscopy, data analysis walkthroughs using our free tools, lab seminars, and behind-the-scenes research content — all free for the global research community.</p>
+                    <div class="yt-features">
+                        <div class="yt-feature-item">
+                            <span class="yt-feature-icon">🎓</span>
+                            <span>Raman Spectroscopy Tutorials</span>
+                        </div>
+                        <div class="yt-feature-item">
+                            <span class="yt-feature-icon">📊</span>
+                            <span>Data Analysis Walkthroughs</span>
+                        </div>
+                        <div class="yt-feature-item">
+                            <span class="yt-feature-icon">🔬</span>
+                            <span>Lab Seminars & Research Talks</span>
+                        </div>
+                        <div class="yt-feature-item">
+                            <span class="yt-feature-icon">🧪</span>
+                            <span>Behind-the-Scenes Lab Content</span>
+                        </div>
+                    </div>
+                    <a href="https://youtube.com/@brightlab-z5m?si=JOJCGS4BCB8So9l1" target="_blank" class="yt-subscribe-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" style="flex-shrink:0;">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                        Subscribe to Our Channel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Team Preview -->
     <section class="team-preview">
         <div class="container">
@@ -170,7 +231,7 @@
                 <div class="underline"></div>
             </div>
             <h3 class="team-category">Ph.D Scholars | Interns | UG Researchers</h3>
-            <p class="team-description">Our dedicated team of doctoral researchers working on cutting-edge biophotonics research.</p>
+            <p class="team-description">Our dedicated team of doctoral researchers and interns working on cutting-edge biophotonics research.</p>
             <a href="team.html" class="btn-secondary">View Team</a>
         </div>
     </section>
@@ -192,6 +253,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="news.html">News</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
                         <li><a href="facilities.html">Facilities</a></li>
                         <li><a href="team.html">Team</a></li>
                         <li><a href="publications.html">Publications</a></li>
@@ -218,5 +280,19 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slideshow-bg .slide');
+        const dots = document.querySelectorAll('.slide-indicators .dot');
+        function goToSlide(n) {
+            slides[currentSlide].classList.remove('slide-active');
+            dots[currentSlide].classList.remove('dot-active');
+            currentSlide = n;
+            slides[currentSlide].classList.add('slide-active');
+            dots[currentSlide].classList.add('dot-active');
+        }
+        slides[0].classList.add('slide-active');
+        setInterval(() => goToSlide((currentSlide + 1) % slides.length), 5000);
+    </script>
 </body>
 </html>
